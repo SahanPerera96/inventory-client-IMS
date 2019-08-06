@@ -53,4 +53,8 @@ export class StockServiceService {
     return this.http.delete(this.Default_URL +'/stock/batch/'+ id )
   }
 
+  postImage(string){
+    return this.http.post(this.Default_URL+ '/stock/uploadImage',string)
+  }
+
 }
